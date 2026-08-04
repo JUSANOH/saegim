@@ -5,4 +5,5 @@ abstract final class AppSpacing {
   static const double labelFieldGap = 8;
   static const double fieldHorizontal = 16;
   static const double fieldVertical = 12;
+  static const double cardPadding = 16;
 }
