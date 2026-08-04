@@ -11,4 +11,5 @@ abstract final class AppSpacing {
   static const double characterImageHeight = 120;
   static const double sectionGap = 24;
   static const double previewHeight = 180;
+  static const double companionHeight = 72;
 }
