@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:saegim/core/constants/app_spacing.dart';
 import 'package:saegim/core/constants/app_theme.dart';
 
 void main() {
@@ -40,7 +41,7 @@ class SplashScreen extends StatelessWidget {
               '새김',
               style: theme.headlineLarge,
             ),
-            const SizedBox(height: 12),
+            SizedBox(height: AppSpacing.titleSubtitleGap),
             Text(
               '당신에게 하지 못한 말을 남기는 공간',
               style: theme.bodyLarge,

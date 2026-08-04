@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:saegim/core/constants/app_colors.dart';
 
 abstract final class AppTheme {
-  static const Color background = Colors.white;
-  static const Color subtitle = Colors.black54;
-
   static ThemeData get lightTheme {
     final theme = ThemeData(
       useMaterial3: true,
       colorScheme: ColorScheme.fromSeed(
-        seedColor: background,
+        seedColor: AppColors.background,
         brightness: Brightness.light,
       ),
-      scaffoldBackgroundColor: background,
+      scaffoldBackgroundColor: AppColors.background,
     );
 
     return theme.copyWith(
@@ -20,7 +18,7 @@ abstract final class AppTheme {
           fontWeight: FontWeight.w600,
         ),
         bodyLarge: theme.textTheme.bodyLarge?.copyWith(
-          color: subtitle,
+          color: AppColors.subtitle,
         ),
       ),
     );
