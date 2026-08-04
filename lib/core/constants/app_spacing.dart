@@ -6,4 +6,5 @@ abstract final class AppSpacing {
   static const double fieldHorizontal = 16;
   static const double fieldVertical = 12;
   static const double cardPadding = 16;
+  static const double appBarHorizontal = 8;
 }
