@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:saegim/core/constants/app_theme.dart';
 
 void main() {
   runApp(
@@ -16,14 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '새김',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.white,
-          brightness: Brightness.light,
-        ),
-        scaffoldBackgroundColor: Colors.white,
-      ),
+      theme: AppTheme.lightTheme,
       home: const SplashScreen(),
     );
   }
@@ -37,19 +31,19 @@ class SplashScreen extends StatelessWidget {
     final theme = Theme.of(context).textTheme;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               '새김',
-              style: theme.headlineLarge?.copyWith(fontWeight: FontWeight.w600),
+              style: theme.headlineLarge,
             ),
             const SizedBox(height: 12),
             Text(
-              '사람에게 하지 못한 말을 남기는 공간',
-              style: theme.bodyLarge?.copyWith(color: Colors.black54),
+              '당신에게 하지 못한 말을 남기는 공간',
+              style: theme.bodyLarge,
               textAlign: TextAlign.center,
             ),
           ],

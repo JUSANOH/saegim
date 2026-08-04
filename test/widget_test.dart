@@ -7,6 +7,6 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     expect(find.text('새김'), findsOneWidget);
-    expect(find.text('사람에게 하지 못한 말을 남기는 공간'), findsOneWidget);
+    expect(find.text('당신에게 하지 못한 말을 남기는 공간'), findsOneWidget);
   });
 }
