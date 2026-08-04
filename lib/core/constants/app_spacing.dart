@@ -7,4 +7,8 @@ abstract final class AppSpacing {
   static const double fieldVertical = 12;
   static const double cardPadding = 16;
   static const double appBarHorizontal = 8;
+  static const double screenHorizontal = 16;
+  static const double characterImageHeight = 120;
+  static const double sectionGap = 24;
+  static const double previewHeight = 180;
 }
